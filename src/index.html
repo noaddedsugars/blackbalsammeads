@@ -1,0 +1,79 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Black Balsam Meads</title>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    font: 18px system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: linear-gradient(135deg, #2c1810 0%, #1a0f08 100%);
+  }
+  
+  .story-side {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #f5f1eb;
+    line-height: 1.7;
+  }
+  
+  .image-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .mead-image {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
+    color: #d4af37;
+    font-weight: 300;
+  }
+  
+  p {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .highlight {
+    color: #d4af37;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    body { flex-direction: column; }
+    .story-side { padding: 2rem; order: 2; }
+    .image-side { order: 1; padding: 1rem; }
+    h1 { font-size: 2rem; }
+  }
+</style>
+
+<body>
+  <div class="story-side">
+    <h1>Black Balsam Meads</h1>
+    <p>From 2010 to 2018, we crafted artisanal meads that captured the wild spirit of the Blue Ridge Mountains. Our honey wines told the story of ancient traditions meeting modern craft, each bottle a testament to the timeless art of mead-making.</p>
+    
+    <p>We sourced the finest local wildflower honey, fermented with care, and aged our meads to perfection. Every sip transported you to the misty peaks of Black Balsam Knob, where the air is pure and the honey flows like liquid gold.</p>
+    
+    <p>After our doors closed in 2018, the mountains waited. The recipes rested. The passion endured.</p>
+    
+    <p class="highlight">Now, the ancient craft stirs once more. Black Balsam Meads returns in 2027.</p>
+  </div>
+  
+  <div class="image-side">
+    <img src="mead.png" alt="Black Balsam Meads bottle" class="mead-image">
+  </div>
+</body>
